@@ -151,7 +151,7 @@ obtainInstruction("steak", 0)
 // Iteration 3 using async/await
 // ...
 
-/*async function makeBroccoli() {
+async function makeBroccoli() {
   let response;
   try {
     const result = await obtainInstruction("broccoli", 0);
@@ -159,7 +159,7 @@ obtainInstruction("steak", 0)
       "#broccoli"
     ).innerHTML += `<li>${instruction}</li>`;
   } catch (error) {}
-}*/
+}
 
 /*obtainInstruction("broccoli", 1).then((instruction) => {
   document.querySelector("#broccoli").innerHTML += `<li>${instruction}</li>`;
