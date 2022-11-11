@@ -151,14 +151,15 @@ obtainInstruction("steak", 0)
 // Iteration 3 using async/await
 // ...
 
-async function obtainInstruction(){
-  try{
-    await ((instruction 0) => {
-      document.querySelector("#broccoli").innerHTML += `<li>${instruction}</li>`;
-    });
-
-  }catch (error) {}
-};
+/*async function makeBroccoli() {
+  let response;
+  try {
+    const result = await obtainInstruction("broccoli", 0);
+    response = result.document.querySelector(
+      "#broccoli"
+    ).innerHTML += `<li>${instruction}</li>`;
+  } catch (error) {}
+}*/
 
 /*obtainInstruction("broccoli", 1).then((instruction) => {
   document.querySelector("#broccoli").innerHTML += `<li>${instruction}</li>`;
@@ -177,19 +178,8 @@ obtainInstruction("broccoli", 5).then((instruction) => {
 });
 obtainInstruction("broccoli", 6).then((instruction) => {
   document.querySelector("#broccoli").innerHTML += `<li>${instruction}</li>`;
+  document.querySelector("#broccoliImg").removeAttribute("hidden");
 });*/
-
-/*async function obtainInstruction() {
-  try {
-    await instruction(0);
-    await instruction(1);
-    await instruction(2);
-    await instruction(3);
-    await instruction(4);
-    await instruction(5);
-    await instruction(6);
-  } catch (error) {}
-}*/
 
 // Bonus 2 - Promise all
 // ...
